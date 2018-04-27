@@ -1,6 +1,7 @@
 $(function () {
 	$('.btn').on('click', function () {
-	$('.non').addClass('active1');
-	$('.none').addClass('active2');
+		$('.tra').toggleClass('changecolor');
+		$('.line').toggleClass('changewidth');
+		console.log('1');
 	})
 })
