@@ -31,5 +31,5 @@ div {
 	transform: translate(401px,29px);
 }
 .five {
-	transform: translate(530px,67px) skew(-8deg,57deg);
+	transform: translate(500px,29px) skewX(30deg) scaleX(0.5) rotate(45deg);
 }
