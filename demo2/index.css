@@ -1,0 +1,35 @@
+.content {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-338px);
+	width: 677px;
+	height: 237px;
+	background: #666699;
+	text-align: center;
+}
+div {
+	position: absolute;
+	top: 28px;
+	left: 18px;
+	width: 59px;
+	height: 68px;
+	line-height: 68px;
+	border:1px solid black;
+	background-color: #fff;
+}
+.one {
+	transform: translateX(114px) skewX(30deg);
+}
+.two {
+	transform: translateX(200px) scaleX(0.5);
+}
+.three {
+	transform: translateX(287px) rotate(45deg);
+}
+.four {
+	transform: translate(401px,29px);
+}
+.five {
+	transform: translate(530px,67px) skew(-8deg,57deg);
+}
