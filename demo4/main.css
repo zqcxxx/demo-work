@@ -1,0 +1,19 @@
+ .content {
+ 	position: absolute;
+ 	left: 50%;
+ 	transform: translateX(-125px);
+	width: 250px;
+	height: 300px;
+  	transform-style: preserve-3d;
+ 	backface-visibility:hidden;
+ }
+ .front,
+ .contray {
+ 	position: absolute;
+ 	transition: all 1s linear;
+ }
+ .content:hover .front,
+ .content:hover .contray {
+ 	transform-origin: center;
+ 	transform: rotateY(180deg);
+ }
