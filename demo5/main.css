@@ -1,0 +1,54 @@
+    html,
+    body {
+        height: 100%;
+    }
+    body {
+        /*overflow: hidden;*/
+        margin: 0;
+        perspective: 15em;
+        background: black;
+    }
+    .cube {
+        transform-style: preserve-3d;
+    }
+    .cube,
+    .cube * {
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .face {
+        margin: -5em;
+        border: solid .25em #1E8BF2;
+        width: 10em;
+        height: 10em;
+        background: #134371;
+        opacity: 0.7;
+    }
+    .face:nth-child(1) {
+        transform: rotateY(0deg) translateZ(5em);
+    }
+    .face:nth-child(2) {
+        transform: rotateY(90deg) translateZ(5em);
+    }
+    .face:nth-child(3) {
+        transform: rotateY(180deg) translateZ(5em);
+    }
+    .face:nth-child(4) {
+        transform: rotateY(270deg) translateZ(5em);
+    }
+    .face:nth-child(5) {
+        transform: rotateX(90deg) translateZ(5em);
+    }
+    .face:nth-child(6) {
+        transform: rotateX(180deg) translateZ(5em);
+    }
+    @keyframes view {
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+    .cube:hover {
+       animation: view 4s linear infinite;        
+    }
