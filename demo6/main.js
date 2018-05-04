@@ -1,17 +1,22 @@
 $(function () {
 	$('.one').on('click', function() {
-		$('.bgone').addClass('activeone');
+		$('.bgone').addClass('a-1 active')
+				   .siblings().removeClass('active a-5 a-2 a-3 a-4');
 	})
 	$('.two').on('click', function() {
-		$('.bgtwo').addClass('activetwo');
+		$('.bgtwo').addClass('a-2 active')
+		           .siblings().removeClass('active a-1 a-3 a-4 a-5');
 	})
 	$('.three').on('click', function() {
-		$('.bgthree').addClass('activethree');
+		$('.bgthree').addClass('a-3 active')
+		             .siblings().removeClass('active a-1 a-2 a-4 a-5');
 	})
 	$('.four').on('click', function() {
-		$('.bgfour').addClass('activefour');
+		$('.bgfour').addClass('a-4 active')
+		            .siblings().removeClass('active a-1 a-2 a-3 a-5');
 	})
 	$('.five').on('click', function() {
-		$('.bgfive').addClass('activefive');
+		$('.bgfive').addClass('a-5 active')
+		            .siblings().removeClass('active a-1 a-2 a-3 a-4');
 	})
 })

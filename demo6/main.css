@@ -1,7 +1,3 @@
-/*	* {
-		margin:0;
-		padding: 0;
-	}*/
 	.head {
 		position: absolute;
 		height: 100%;
@@ -37,34 +33,29 @@
 	.one {
 		padding-left: 50px;
 	}
+	.head img {
+		opacity: 1;
+	}
 	.head .bgtwo img {
-		opacity: 1;
+		z-index: 1;
 	}
-
-	.head .activeone img{
-		opacity: 1;
+	.head .active img{
+		z-index: 3;
+	}
+	.head .a-1 img{
 		animation: anone .5s ease-out;
-		z-index: 100;
 	}
-	.head .activetwo img{
-		opacity: 1;
+	.head .a-2 img{
 		animation: antwo .5s ease-out;
-		z-index: 101;
 	}
-	.head .activethree img{
-		opacity: 1;
+	.head .a-3 img{
 		animation: anthree 1s ease-in;
-		z-index: 102;
 	}
-	.head .activefour img{
-		opacity: 1;
+	.head .a-4 img{
 		animation: anfour 1s ease-out;
-		z-index: 103;
 	}
-	.head .activefive img{
-		opacity: 1;
+	.head .a-5 img{
 		animation: anfive .7s ease-in-out;
-		z-index: 104;
 	}
 	@keyframes anone {
 		from {
