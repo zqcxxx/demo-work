@@ -1,0 +1,109 @@
+/*	* {
+		margin:0;
+		padding: 0;
+	}*/
+	.head {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+	.head img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+
+	.container {
+		position: absolute;
+		left: 50%;
+		margin-left: -600px;
+		bottom: 50px;
+		width: 1200px;
+		height: 200px;
+		z-index: 1000;
+	}
+
+	.container img {
+		display: block;
+		width: 150px;
+		height: 100px;
+		margin-top: 50px;
+		float: left;
+		padding-left: 50px;
+		cursor: pointer;
+	}
+	
+	.one {
+		padding-left: 50px;
+	}
+	.head .bgtwo img {
+		opacity: 1;
+	}
+
+	.head .activeone img{
+		opacity: 1;
+		animation: anone .5s ease-out;
+		z-index: 100;
+	}
+	.head .activetwo img{
+		opacity: 1;
+		animation: antwo .5s ease-out;
+		z-index: 101;
+	}
+	.head .activethree img{
+		opacity: 1;
+		animation: anthree 1s ease-in;
+		z-index: 102;
+	}
+	.head .activefour img{
+		opacity: 1;
+		animation: anfour 1s ease-out;
+		z-index: 103;
+	}
+	.head .activefive img{
+		opacity: 1;
+		animation: anfive .7s ease-in-out;
+		z-index: 104;
+	}
+	@keyframes anone {
+		from {
+			left: -500px;
+		}
+		to {
+			left: 0;
+		}
+	}
+	@keyframes antwo {
+		from {
+			top: 300px;
+		}
+		to {
+			top: 0;
+		}
+	}
+	@keyframes anthree {
+		from {
+			transform: scale(0.1);
+		}
+		to {
+			transform: scale(1);
+		}
+	}
+	@keyframes anfour {
+		from {
+			transform: scale(2);
+		}
+		to {
+			transform: scale(1);
+		}
+	}
+	@keyframes anfive {
+		from {
+			transform: rotate(-360deg) scale(0.1);
+		}
+		to {
+			transform: rotate(0) scale(1);
+		}
+	}
+	
